@@ -1,0 +1,7 @@
+component: cos
+name: cos-s2-16345-net
+stage: prod
+
+inputs:
+  bucket: s2-frontend-assets-1254054744
+  region: ap-shanghai
