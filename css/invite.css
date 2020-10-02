@@ -1,0 +1,349 @@
+body{
+	font-family: PingFang SC,Microsoft YaHei,-apple-system-font,\\9ED1\4F53,Helvetica Neue,Helvetica,STHeiTi,sans-serif;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	background: #272727;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+.ui-reg-main{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	justify-content: center;
+	align-items: flex-end;
+}
+.close{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.top-title{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+.top-title:after{
+	content: '';
+	background: url(../images/2019-07-10/title.png);
+	background-size: 100%;
+	width: 360px;
+	display: inline-block;
+	position: relative;
+	margin-top: -10px;
+	height: 123px;
+	animation: fadeIn 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.ui-invite-main{
+	box-sizing: border-box;
+	background: #3583fb;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	padding: 30px 10px;
+	background: url(https://old.lianhe.art/css/1500.jpg);
+	background-size: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.ui-invite-main:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.ui-reg-div span{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	margin-top: -25px;
+	float: left;
+	margin-bottom: 20px;
+}
+.ui-reg-div span:after{
+	content: '';
+	display: inline-block;
+	width: 60px;
+	height: 6px;
+	background: #ececec;
+	border-radius: 50px;
+}
+.ui-reg-div{
+	position: relative;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.14);
+	box-sizing: border-box;
+	background: #FFF;
+	overflow: auto;
+	padding: 30px;
+	align-items: center;
+	animation: fadeIn 0.68s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	z-index: 2;
+	width: calc(100%);
+	height: calc(100% - 200px);
+	border-radius: 30px 30px 0px 0px;
+	z-index: 1;
+	transition: all .3s;
+}
+.ui-reg-div.h-b{
+	height: calc(100% - 60px);
+}
+.ui-invite-div{
+	position: relative;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.14);
+	box-sizing: border-box;
+	background: #FFF;
+	border-radius: 30px;
+	display: flex;
+	overflow: hidden;
+	padding: 30px;
+	align-items: center;
+	animation: fadeIn 1.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	margin-bottom: 20px;
+	z-index: 2;
+}
+.icon.bg{
+	color: rgba(0, 0, 0, 0.050980392156862744);
+	font-size: 100px;
+	right: -20px;
+	position: absolute;
+	bottom: -20px;
+	transform: rotate(-15deg);
+}
+.ui-users-info{
+	width: 100%;
+	text-align: center;
+}
+.ui-users-info img{
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	border: 4px solid #f2f2f2;
+}
+.ui-btn{text-align: center;margin-top: 30px;}
+.ui-btn button{
+	font-size: 16px;
+	text-decoration:none;
+	color: #FFF;
+	background: #3583fb;
+	padding: 0px 10px;
+	line-height: 50px;
+	display: inline-block;
+	width: 160px;
+	border-radius: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+}
+button.post{
+	font-size: 16px;
+	text-decoration:none;
+	color: #FFF;
+	background: #3583fb;
+	padding: 0px 10px;
+	line-height: 50px;
+	display: inline-block;
+	width: 160px;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	width: 100%;
+	margin-top: 20px;
+}
+.icon.top-bg{
+	position: absolute;
+	color: rgba(255, 255, 255, 0.19);
+	top: 39px;
+	right: -1px;
+	font-size: 63px;
+}
+.ui-invite-div > div{
+	width: 100%;
+	display: inline-block;
+}
+.ui-invite-div p{
+	color: #333;
+}
+.ui-invite-div p b{
+	font-size: 30px;
+	margin:0 5px;
+	color: #3583fb;
+}
+.ui-invite-div p sm{
+	color: #3583fb;
+	font-weight: bold;
+}
+.ui-logo{text-align: center;}
+.ui-logo img{
+	width: 180px;
+	height: 41.84px;
+}
+.ui-text{
+	margin-top: 20px;
+	color: #333;
+	text-align: center;
+	padding: 0 30px;
+}
+.ui-title{
+	font-size: 20px;
+	font-weight: bold;
+	color: #222;
+}
+.ui-text-anti{
+	margin-top: 10px;
+	color: #666;
+}
+embed.i{
+	width: 168px;
+	position: relative;
+	z-index: 2;
+}
+.ui-logo-bottom{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+span.num{
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	text-align: center;
+	background: #f2f2f2;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+	font-weight: bold;
+}
+span.icon-link{
+	font-size: 20px;
+	margin-left: 5px;
+}
+.ui-input{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.ui-input .name{
+	margin-bottom: 5px;
+	color: #666;
+}
+.ui-input .input{
+	position: relative;
+}
+.input.code{
+	display: flex;
+}
+.ui-input input{
+	border: none;
+	width: 100%;
+	line-height: 20px;
+	outline:none;
+	font-size: 18px;
+	background: #f9fbfd;
+	padding: 8px 15px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-weight: bold;
+	border: 1px solid #f9fbfd;
+	transition: all .3s;
+	-webkit-appearance: none;
+}
+.ui-input .code input{
+	flex: 1;
+	margin-right: 15px;
+}
+.ui-input .code input{
+	
+}
+.ui-reg-div h2{
+	margin-top:0;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.ui-input input.ing{
+	
+	box-sizing: border-box;
+	border-radius: 3px;
+	transition: all .3s;
+}
+.post_code{
+	font-size: 14px;
+	text-decoration:none;
+	color: #FFF;
+	background: #3583fb;
+	padding: 0px 10px;
+	display: inline-block;
+	border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+}
+.check-main{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	transition: all .3s;
+}
+.check-main > div{
+	text-align: center;
+}
+.check-main i{
+	font-size: 70px;
+	color: #3583fb;
+}
+.check-main .title{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.check-main p{
+	padding: 0 15px;
+	color: #666;
+}
+.check-main b{
+	color: #3583fb;
+	margin: 0 4px;
+}
+.check-main a{
+	font-size: 16px;
+	text-decoration:none;
+	color: #FFF;
+	background: #3583fb;
+	padding: 0px 10px;
+	line-height: 50px;
+	display: inline-block;
+	width: 160px;
+	border-radius: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	margin-top: 20px;
+}
+@media (min-width: 1024px){
+  .ui-reg-div.h-b{
+  	width: 400px;
+	margin: 0px auto;
+  }
+  .ui-invite-main{
+  	width: 400px;
+    margin: 0px auto;
+  }
+}
