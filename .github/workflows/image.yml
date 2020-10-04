@@ -1,0 +1,62 @@
+name: images
+
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - '.github/workflows/image.yml'
+      - 'images'
+      - 'logo'
+      - 'svg'
+      - 'video'
+  pull_request:
+    paths:
+      - '.github/workflows/image.yml'
+      - 'images'
+      - 'logo'
+      - 'svg'
+      - 'video'
+
+defaults:
+  run:
+    shell: bash
+    working-directory: ./
+
+jobs:
+  deploy:
+    name: Deploy Images
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        regions: [ 'ap-shanghai' ]
+      fail-fast: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Deploy to Staging - ${{ matrix.regions }}
+        uses: saltbo/uptoc@v1.4.3
+        if: github.event_name == 'pull_request'
+        with:
+          driver: cos
+          region: ${{ matrix.regions }}
+          bucket: frontend-images-staging-${{ secrets.TENCENTCLOUD_APP_ID }}
+          exclude: .git,.github,.gitignore,README.md,test,css,js,public
+          dist: .
+        env:
+          UPTOC_UPLOADER_AK: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
+          UPTOC_UPLOADER_SK: ${{ secrets.TENCENTCLOUD_SECRET_KEY }}
+
+      - name: Deploy to Prod - ${{ matrix.regions }}
+        uses: saltbo/uptoc@v1.4.3
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        with:
+          driver: cos
+          region: ${{ matrix.regions }}
+          bucket: frontend-images-prod-${{ secrets.TENCENTCLOUD_APP_ID }}
+          exclude: .git,.github,.gitignore,README.md,test,css,js,public
+          dist: .
+        env:
+          UPTOC_UPLOADER_AK: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
+          UPTOC_UPLOADER_SK: ${{ secrets.TENCENTCLOUD_SECRET_KEY }}

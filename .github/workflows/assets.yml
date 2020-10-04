@@ -1,14 +1,20 @@
-name: Deploy
+name: assets
 
 on:
   push:
     branches:
       - 'master'
-    paths-ignore:
-      - 'README.md'
+    paths:
+      - '.github/workflows/assets.yml'
+      - 'css'
+      - 'js'
+      - 'public'
   pull_request:
-    paths-ignore:
-      - 'README.md'
+    paths:
+      - '.github/workflows/assets.yml'
+      - 'css'
+      - 'js'
+      - 'public'
 
 defaults:
   run:
@@ -34,7 +40,7 @@ jobs:
           driver: cos
           region: ${{ matrix.regions }}
           bucket: s2-frontend-assets-staging-${{ secrets.TENCENTCLOUD_APP_ID }}
-          exclude: .git,.github,.gitignore,README.md,test
+          exclude: .git,.github,.gitignore,README.md,test,images,logo,svg,video
           dist: .
         env:
           UPTOC_UPLOADER_AK: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
@@ -47,7 +53,7 @@ jobs:
           driver: cos
           region: ${{ matrix.regions }}
           bucket: s2-frontend-assets-prod-${{ secrets.TENCENTCLOUD_APP_ID }}
-          exclude: .git,.github,.gitignore,README.md,test
+          exclude: .git,.github,.gitignore,README.md,test,images,logo,svg,video
           dist: .
         env:
           UPTOC_UPLOADER_AK: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
