@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'HYChangMeiHeiJ';
+  font-display: swap;
+  src: url('../fonts/HYChangMeiHeiJ.woff') format('woff');
+}
+
+.font-HYChangMeiHeiJ{
+	font-family: HYChangMeiHeiJ;
+}
+
+@font-face {
+  font-family: 'Anton';
+  font-display: swap;
+  src: url('../fonts/Anton.woff') format('woff');
+}
+
+.font-Anton{
+	font-family: Anton;
+}
+
+@font-face {
+  font-family: 'Shufa';
+  font-display: swap;
+  src: url('../fonts/Shufa.woff') format('woff');
+}
+
+.font-Shufa{
+	font-family: Shufa;
+}
+
+@font-face {
+  font-family: 'Shufa1';
+  font-display: swap;
+  src: url('../fonts/Shufa1.woff') format('woff');
+}
+
+.font-Shufa1{
+	font-family: Shufa1;
+}
+
+@font-face {
+  font-family: 'Shufa2';
+  font-display: swap;
+  src: url('../fonts/Shufa2.woff') format('woff');
+}
+
+.font-Shufa2{
+	font-family: Shufa2;
+}
+
+@font-face {
+  font-family: 'Shufa3';
+  font-display: swap;
+  src: url('../fonts/Shufa3.woff') format('woff');
+}
+
+.font-Shufa3{
+	font-family: Shufa3;
+}
+
+@font-face {
+  font-family: 'Shufa4';
+  font-display: swap;
+  src: url('../fonts/Shufa4.woff') format('woff');
+}
+
+.font-Shufa4{
+	font-family: Shufa4;
+}
+
+@font-face {
+  font-family: 'Shufa5';
+  font-display: swap;
+  src: url('../fonts/Shufa5.woff') format('woff');
+}
+
+.font-Shufa5{
+	font-family: Shufa5;
+}
+
+@font-face {
+  font-family: 'HYLiuZiHeiJ';
+  font-display: swap;
+  src: url('../fonts/HYLiuZiHeiJ.woff') format('woff');
+}
+
+.font-HYLiuZiHeiJ{
+	font-family: HYLiuZiHeiJ;
+}
+
+
+@font-face {
+  font-family: 'HYRuiYiSongJ';
+  font-display: swap;
+  src: url('../fonts/HYRuiYiSongJ.woff') format('woff');
+}
+
+.font-HYRuiYiSongJ{
+	font-family: HYRuiYiSongJ;
+}
+
+@font-face {
+  font-family: 'HYLiLiangHeiJ';
+  font-display: swap;
+  src: url('../fonts/HYLiLiangHeiJ.woff') format('woff');
+}
+
+.font-HYLiLiangHeiJ{
+	font-family: HYLiLiangHeiJ;
+}
+
+@font-face {
+  font-family: 'HYHeiFangJ';
+  font-display: swap;
+  src: url('../fonts/HYHeiFangJ.woff') format('woff');
+}
+
+.font-HYHeiFangJ{
+	font-family: HYHeiFangJ;
+}
+
+@font-face {
+  font-family: 'tt0196m';
+  font-display: swap;
+  src: url('../fonts/tt0196m.ttf') format('woff');
+}
+
+.font-tt0196m{
+	font-family: tt0196m;
+}
+
+
+
+

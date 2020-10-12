@@ -1,0 +1,235 @@
+.canva-cover{
+	width: 100%;
+	padding: 0 30px;
+	box-sizing: border-box;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+.canva-cover .head{
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+.canva-cover .head h2{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+.canva-cover .head h2 i{
+	font-size: 30px;
+	float: left;
+	margin-right: 10px;
+}
+.canva-cover .step{
+	width: 100%;
+	display: inline-block;
+}
+.canva-cover .step > div{
+	display: none;
+	width: 100%;
+}
+.canva-cover .step > div.cur{
+	display: inline-block;
+}
+.canva-cover .btn{
+	text-align: center;
+	padding-top: 20px;
+	position: absolute;
+	width: calc(100% - 60px);
+	left: 30px;
+	bottom: 0;
+	padding-bottom: 20px;
+	background: #fff;
+}
+.canva-cover .btn .ui-btn{
+	border-radius: 30px;
+	margin-right: 10px;
+	display: inline-block;
+	padding: 0;
+	width: 130px;
+}
+.canva-cover .btn .ui-btn:last-child{
+	margin-right: 0;
+}
+.canva-cover .btn .ui-btn.d-w{
+	background: #FFF;
+	border: 1px solid #ececec;
+	box-sizing: border-box;
+	color: #666;
+}
+.canva-cover .step-line{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.canva-cover .step-line li{
+	flex: 1;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	color: #666;
+	justify-content: center;
+	position: relative;
+}
+.canva-cover .step-line li .icon{
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	line-height: 45px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #999;
+	border-radius: 100%;
+	margin-right: 10px;
+	border: 1px solid #ececec;
+}
+.canva-cover .step-line li.cur .icon{
+	background: #3483fb;
+	color: #FFF;
+	border-color: #3483fb;
+}
+.canva-cover .step-line li.cur{
+	color: #333;
+}
+.canva-cover .step-line li:after{
+	content: "";
+	display: inline-block;
+	width: 100px;
+	position: absolute;
+	height: 1px;
+	background: #ececec;
+	right: -48px;
+}
+.canva-cover .step-line li:last-child:after{
+	display: none;
+}
+.canva-cover .form{
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 75px;
+	text-align: left;
+}
+.canva-cover .form .layui-form-label{
+	line-height: 30px;
+	width: 100%;
+	padding: 0;
+	text-align: left;
+	margin-bottom: 5px;
+	color: #999;
+	font-size: 13px;
+}
+.canva-cover .form .layui-input-block{
+	margin: 0;
+}
+.canva-cover .info{
+	margin: 0;
+}
+.canva-cover .form input{border-radius: 3px;padding: 0 15px;line-height: 43px;height: 43px;background: #fafafa;border: none;border: 1px solid #f2f2f2;}
+.canva-cover .step-line li i{
+	display: none;
+	font-weight: bold;
+}
+.canva-cover .step-line li.cur-icon b{
+	display: none;
+}
+.canva-cover .step-line li.cur-icon i{
+	display: inline-block;
+}
+.canva-cover .btn .ui-btn.d-n{
+	background: #ccc;
+	cursor: default;
+}
+.canva-cover .form h2{
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 30px;
+	color: #333;
+}
+.canva-cover .form .upload{
+	width: 200px;
+	height: 200px;
+	display: flex;
+	margin: 0 auto;
+	border: 1px dashed #ccc;
+	justify-content: center;
+	align-items: center;
+	color: #999;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-bottom: 45px;
+}
+.canva-cover .form .upload i{
+	font-size: 30px;
+}
+.canva-cover .form p{
+	text-align: center;
+	color: #999;
+}
+.canva-cover .form p a{
+	color: #3483fb;
+}
+.canva-cover .form .upload.cur{
+	border: 5px solid #f2f2f2;
+	box-sizing: border-box;
+}
+.canva-cover .form .upload.cur i{
+	display: none;
+}
+.coverlists{
+    width: 100%;
+    overflow: auto;
+    height: calc(100vh - 340px);
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding-left: 25px;
+}
+.coverlists li{
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 0 10px;
+	margin-bottom: 20px;
+	border: 4px solid #f2f2f2;
+	transition: all .2s;
+	border-radius: 1px;
+}
+.coverlists li img{
+	width: 100%;
+	height: 100%;
+}
+.coverlists li:hover{
+	border-color: #3483fb;
+    transition: all .2s;
+}
+.coverlists li.cur{
+	border-color: #3483fb;
+}
+.ui-hei-color{
+    color: #000000;
+}
+.ui-capture {
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    background: #000;
+    color: #FFF;
+    box-sizing: border-box;
+    padding: 40px;
+    position: fixed;
+    left: -1000px;
+    top: 1000px;
+    background: #000;
+}
+.canva-cover .load-list{
+	text-align: center;
+	color: #999;
+	font-size: 13px;
+	height: calc(100vh - 300px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
