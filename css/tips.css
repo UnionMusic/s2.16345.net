@@ -364,7 +364,7 @@
 	display:inline-block;
 	width:60px;
 	height:60px;
-	background:url(../images/sprite.png) no-repeat;
+	background:url(https://img.16345.net/images/sprite.png) no-repeat;
 	background-position:0 0
 }
 .msgbox .bd {
@@ -383,7 +383,7 @@
 	word-break: break-all;
 }
 .msgbox.warn .hd i {
-	background-image:url(../images/sprite.png);
+	background-image:url(https://img.16345.net/images/sprite.png);
 	background-position:-60px 0
 }
 input{

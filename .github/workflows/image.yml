@@ -42,7 +42,7 @@ jobs:
           driver: cos
           region: ${{ matrix.regions }}
           bucket: frontend-images-staging-${{ secrets.TENCENTCLOUD_APP_ID }}
-          exclude: .git,.github,.gitignore,README.md,test,css,js,public,audio,canva
+          exclude: .git,.github,.gitignore,README.md,test,css,js,public,audio,canva,font-ui
           dist: .
         env:
           UPTOC_UPLOADER_AK: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
@@ -55,7 +55,7 @@ jobs:
           driver: cos
           region: ${{ matrix.regions }}
           bucket: frontend-images-prod-${{ secrets.TENCENTCLOUD_APP_ID }}
-          exclude: .git,.github,.gitignore,README.md,test,css,js,public,audio,canva
+          exclude: .git,.github,.gitignore,README.md,test,css,js,public,audio,canva,font-ui
           dist: .
         env:
           UPTOC_UPLOADER_AK: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
