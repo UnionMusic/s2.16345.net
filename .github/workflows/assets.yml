@@ -9,12 +9,16 @@ on:
       - 'css'
       - 'js'
       - 'public'
+      - 'audio'
+      - 'canva'
   pull_request:
     paths:
       - '.github/workflows/assets.yml'
       - 'css'
       - 'js'
       - 'public'
+      - 'audio'
+      - 'canva'
 
 defaults:
   run:
