@@ -11,6 +11,7 @@ on:
       - 'public'
       - 'audio'
       - 'canva'
+      - 'font-ui'
   pull_request:
     paths:
       - '.github/workflows/assets.yml'
@@ -19,7 +20,8 @@ on:
       - 'public'
       - 'audio'
       - 'canva'
-
+      - 'font-ui'
+      
 defaults:
   run:
     shell: bash
