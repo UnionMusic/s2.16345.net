@@ -658,7 +658,7 @@ a.url:hover{
 	width:800px;
 	height:576px;
 	margin-top:160px;
-	background-image:url(../images/device.png);
+	background-image:url(https://img.16345.net/images/device.png);
 	animation:fadeIn 0.6s cubic-bezier(0.68,-0.55,0.27,1.55);
 	background-size:100% 100%;
 	top:0;
@@ -1021,7 +1021,7 @@ h3 {
 	position:relative;
 }
 .main-candos .div-list .bg {
-	background:url(../images/index-bag-images.jpg);
+	background:url(https://img.16345.net/images/index-bag-images.jpg);
 	background-size:cover!important;
 	background-position:50% 50%!important;
 	margin:-20px;
@@ -2293,7 +2293,7 @@ span.tips-show-sm:hover .hover {
 	border-radius:100%;
 	right:24px;
 	top:90px;
-	background:url(../images/vip.jpg);
+	background:url(https://img.16345.net/images/vip.jpg);
 	background-size:100%;
 	border:2px solid #fff;
 	cursor:pointer;
