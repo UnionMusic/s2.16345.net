@@ -6,17 +6,18 @@ on:
       - 'master'
     paths:
       - '.github/workflows/image.yml'
-      - 'images'
-      - 'logo'
-      - 'svg'
-      - 'video'
+      - 'images/**'
+      - 'logo/**'
+      - 'svg/**'
+      - 'video/**'
   pull_request:
     paths:
       - '.github/workflows/image.yml'
-      - 'images'
-      - 'logo'
-      - 'svg'
-      - 'video'
+      - 'images/**'
+      - 'logo/**'
+      - 'svg/**'
+      - 'video/**'
+  workflow_dispatch:
 
 defaults:
   run:

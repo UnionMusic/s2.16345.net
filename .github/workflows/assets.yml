@@ -6,21 +6,22 @@ on:
       - 'master'
     paths:
       - '.github/workflows/assets.yml'
-      - 'css'
-      - 'js'
-      - 'public'
-      - 'audio'
-      - 'canva'
-      - 'font-ui'
+      - 'css/**'
+      - 'js/**'
+      - 'public/**'
+      - 'audio/**'
+      - 'canva/**'
+      - 'font-ui/**'
   pull_request:
     paths:
       - '.github/workflows/assets.yml'
-      - 'css'
-      - 'js'
-      - 'public'
-      - 'audio'
-      - 'canva'
-      - 'font-ui'
+      - 'css/**'
+      - 'js/**'
+      - 'public/**'
+      - 'audio/**'
+      - 'canva/**'
+      - 'font-ui/**'
+  workflow_dispatch:
       
 defaults:
   run:
