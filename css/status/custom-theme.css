@@ -5,3 +5,9 @@
     --nav-background-color: #002b29;
     --nav-border-bottom-color: #015450;
 }
+
+.logo img {
+    margin-right: 1rem;
+    width: 10rem;
+    border-radius: 0.2rem;
+}
